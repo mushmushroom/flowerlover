@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" href="images/content/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/content/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div id="overlay"></div>
+  <main>
+
+
+    <header class="header">
+  <div class="container">
+    <div class="menu">
+      <a class="logo" href="#">
+        <img class="logo__img" src="images/logo.svg" alt="logo">
+      </a>
+      <button type="button" class="menu__icon icon-menu">
+        <span></span>
+      </button>
+      <nav class="menu__body">
+
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" data-goto=".hero" href="#">Головна</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" data-goto=".catalog" href="#">Каталог</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" data-goto=".about" href="#">Про нас</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" data-goto=".contact" href="#">Як замовити</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" data-goto=".clients" href="#">Відгуки</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" data-goto=".footer" href="#">Контакти </a>
+          </li>
+
+
+
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+    <section class="hero">
+      <div class="hero__top">
+        <div class="hero__content">
+          <div class="hero__image">
+            <img src="images/hero/bg-image.png" alt="Bouquet">
+          </div>
+          <div class="container">
+            <h1 class="hero__title">
+              Неймовірні<br> <span>Букети</span> зі свіжих квітів
+            </h1>
+            <div class="hero__text">
+              <p>З доставкою по Києву протягом 1 години</p>
+            </div>
+            <a href="#" class="button button--caps">Замовити квіти</a>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <div class="hero__bottom">
+        <ul class="hero__list">
+          <li class="hero__item">
+            <img src="images/hero/1.svg" alt="Icon">
+            <span>Щоденне оновлення свіжих квітів</span>
+          </li>
+          <li class="hero__item">
+            <img src="images/hero/2.svg" alt="Icon">
+            <span>Безкоштовна доставка в будь яку точку міста</span>
+          </li>
+          <li class="hero__item">
+            <img src="images/hero/3.svg" alt="Icon">
+            <span>Більше 1000 сортів квітів з усього світу</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="catalog">
+      <div class="container">
+        <h2 class="title catalog__title">Каталог</h2>
+
+        <div class="catalog__top">
+          <h3 class="catalog__subtitle">Доставка квітів в Києві</h3>
+          <ul data-spollers="768,max" data-one-spoller class="catalog__filters filters-catalog">
+            <li class="filters-catalog__item">
+              <div class="filters-catalog__box">
+                <button type="button" data-spoller class="filters-catalog__title">Ціна ...</button>
+                <form class="filters-catalog__body" action="#">
+                  <label class="filters-catalog__label" for="price1">
+                    <input class="filters-catalog__input" type="radio" name="price" id="price1">
+                    <span class="filters-catalog__checkbox"></span>
+                    <span class="filters-catalog__text">
+                      &lt; 200 ₴ </span>
+                  </label>
+
+                  <label class="filters-catalog__label" for="price2">
+                    <input class="filters-catalog__input" type="radio" name="price" id="price2">
+                    <span class="filters-catalog__checkbox"></span>
+                    <span class="filters-catalog__text">
+                      200 - 500 ₴ </span>
+                  </label>
+
+                  <label class="filters-catalog__label" for="price3">
+                    <input class="filters-catalog__input" type="radio" name="price" id="price3">
+                    <span class="filters-catalog__checkbox"></span>
+                    <span class="filters-catalog__text">
+                      &gt; 1000 ₴ </span>
+                  </label>
+
+                  <button class="filters-catalog__button button button--small" type="submit">Застосувати</button>
+                </form>
+              </div>
+            </li>
+            <li class="filters-catalog__item">
+              <div class="filters-catalog__box">
+                <button type="button" data-spoller class="filters-catalog__title">Квіти ...</button>
+                <form class="filters-catalog__body" action="#">
+                  <label class="filters-catalog__label" for="flower1">
+                    <input class="filters-catalog__input" type="radio" name="flower" id="flower1">
+                    <span class="filters-catalog__checkbox"></span>
+                    <span class="filters-catalog__text">
+                      Троянда </span>
+                  </label>
+
+                  <label class="filters-catalog__label" for="flower2">
+                    <input class="filters-catalog__input" type="radio" name="flower" id="flower2">
+                    <span class="filters-catalog__checkbox"></span>
+                    <span class="filters-catalog__text">
+                      Еустома </span>
+                  </label>
+
+                  <label class="filters-catalog__label" for="flower3">
+                    <input class="filters-catalog__input" type="radio" name="flower" id="flower3">
+                    <span class="filters-catalog__checkbox"></span>
+                    <span class="filters-catalog__text">
+                      Хризантема </span>
+                  </label>
+
+                  <label class="filters-catalog__label" for="flower4">
+                    <input class="filters-catalog__input" type="radio" name="flower" id="flower4">
+                    <span class="filters-catalog__checkbox"></span>
+                    <span class="filters-catalog__text">
+                      Лілія </span>
+                  </label>
+
+                  <label class="filters-catalog__label" for="flower5">
+                    <input class="filters-catalog__input" type="radio" name="flower" id="flower5">
+                    <span class="filters-catalog__checkbox"></span>
+                    <span class="filters-catalog__text">
+                      Тюльпан </span>
+                  </label>
+
+                  <label class="filters-catalog__label" for="flower6">
+                    <input class="filters-catalog__input" type="radio" name="flower" id="flower6">
+                    <span class="filters-catalog__checkbox"></span>
+                    <span class="filters-catalog__text">
+                      Гортензія</span>
+                  </label>
+
+                  <label class="filters-catalog__label" for="flower7">
+                    <input class="filters-catalog__input" type="radio" name="flower" id="flower7">
+                    <span class="filters-catalog__checkbox"></span>
+                    <span class="filters-catalog__text">
+                      Альстромерія</span>
+                  </label>
+
+                  <button class="filters-catalog__button button button--small" type="submit">Застосувати</button>
+                </form>
+              </div>
+            </li>
+            <li class="filters-catalog__item">
+              <div class="filters-catalog__box">
+                <button type="button" data-spoller class="filters-catalog__title">Кому ...</button>
+                <form class="filters-catalog__body" action="#">
+                  <label class="filters-catalog__label" for="recipient1">
+                    <input class="filters-catalog__input" type="radio" name="recipient" id="recipient1">
+                    <span class="filters-catalog__checkbox"></span>
+                    <span class="filters-catalog__text">
+                      Жінці </span>
+                  </label>
+
+                  <label class="filters-catalog__label" for="recipient2">
+                    <input class="filters-catalog__input" type="radio" name="recipient" id="recipient2">
+                    <span class="filters-catalog__checkbox"></span>
+                    <span class="filters-catalog__text">
+                      Чоловіку </span>
+                  </label>
+
+                  <button class="filters-catalog__button button button--small" type="submit">Застосувати</button>
+                </form>
+              </div>
+            </li>
+            <li class="filters-catalog__item">
+              <div class="filters-catalog__box">
+                <button type="button" data-spoller class="filters-catalog__title">Привід...</button>
+                <form class="filters-catalog__body" action="#">
+                  <label class="filters-catalog__label" for="occasion1">
+                    <input class="filters-catalog__input" type="radio" name="occasion" id="occasion1">
+                    <span class="filters-catalog__checkbox"></span>
+                    <span class="filters-catalog__text">
+                      День народження </span>
+                  </label>
+
+                  <label class="filters-catalog__label" for="occasion2">
+                    <input class="filters-catalog__input" type="radio" name="occasion" id="occasion2">
+                    <span class="filters-catalog__checkbox"></span>
+                    <span class="filters-catalog__text">
+                      Весілля </span>
+                  </label>
+
+                  <label class="filters-catalog__label" for="occasion3">
+                    <input class="filters-catalog__input" type="radio" name="occasion" id="occasion3">
+                    <span class="filters-catalog__checkbox"></span>
+                    <span class="filters-catalog__text">
+                      Кохання </span>
+                  </label>
+
+                  <label class="filters-catalog__label" for="occasion4">
+                    <input class="filters-catalog__input" type="radio" name="occasion" id="occasion4">
+                    <span class="filters-catalog__checkbox"></span>
+                    <span class="filters-catalog__text">
+                      Співчуваю </span>
+                  </label>
+
+                  <button class="filters-catalog__button button button--small" type="submit">Застосувати</button>
+                </form>
+              </div>
+            </li>
+
+            <li class="filters-catalog__item">
+              <div class="filters-catalog__box">
+                <button type="button" data-spoller class="filters-catalog__title">Стиль ...</button>
+                <form class="filters-catalog__body" action="#">
+                  <label class="filters-catalog__label" for="styl1">
+                    <input class="filters-catalog__input" type="radio" name="styl" id="styl1">
+                    <span class="filters-catalog__checkbox"></span>
+                    <span class="filters-catalog__text">
+                      Вільний </span>
+                  </label>
+
+                  <label class="filters-catalog__label" for="styl2">
+                    <input class="filters-catalog__input" type="radio" name="styl" id="styl2">
+                    <span class="filters-catalog__checkbox"></span>
+                    <span class="filters-catalog__text">
+                      Каркасний </span>
+                  </label>
+                  <label class="filters-catalog__label" for="styl3">
+                    <input class="filters-catalog__input" type="radio" name="styl" id="styl3">
+                    <span class="filters-catalog__checkbox"></span>
+                    <span class="filters-catalog__text">
+                      В коробці </span>
+                  </label>
+                  <label class="filters-catalog__label" for="styl4">
+                    <input class="filters-catalog__input" type="radio" name="styl" id="styl4">
+                    <span class="filters-catalog__checkbox"></span>
+                    <span class="filters-catalog__text">
+                      В кошику </span>
+                  </label>
+                  <label class="filters-catalog__label" for="styl5">
+                    <input class="filters-catalog__input" type="radio" name="styl" id="styl5">
+                    <span class="filters-catalog__checkbox"></span>
+                    <span class="filters-catalog__text">
+                      Каскадний </span>
+                  </label>
+
+                  <button class="filters-catalog__button button button--small" type="submit">Застосувати</button>
+                </form>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="catalog__body">
+          <h3 class="catalog__subtitle">Хіт продажів</h3>
+          <ul class="catalog__cards">
+            <li class="catalog__card">
+              <article class="item-card ">
+                <div class="item-card__inner">
+                  <div class="item-card__image">
+                    <img src="images/catalog/1.jpeg" alt="Bouquet">
+                  </div>
+                  <div class="item-card__label item-card__label--sale">
+                    <span>Акція</span>
+                  </div>
+                  <div class="item-card__price">
+                    <div class="item-card__new-price">500 ₴</div>
+                    <div class="item-card__old-price">700 ₴</div>
+                  </div>
+                  <h4 class="item-card__descr">
+                    Мінібукет 1400-2
+                  </h4>
+                  <button class="item-card__favorite" type="button">
+                    <span class="sr-only">Add to favorite</span>
+                  </button>
+                </div>
+                <div class="item-card__details">
+                  <div class="item-card__contents">
+                    <p>
+                      Хрезантема - 6 шт. (50 см.), <br> Троянда міні - 4 шт.,
+                    </p>
+                  </div>
+                  <div class="item-card__box">
+                    <form class="item-card__form" action="#">
+                      <button class="item-card__number-button item-card__number-button--minus"
+                        type="button">&minus;</button>
+                      <input class="item-card__input"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"
+                        type="text" name="qty" id="qty1" value="1" required>
+                      <button class="item-card__number-button item-card__number-button--plus"
+                        type="button">&plus;</button>
+                    </form>
+                    <button class="button button--small item-card__button" type="submit">Замовити</button>
+                  </div>
+                </div>
+
+              </article>
+            </li>
+
+            <li class="catalog__card">
+              <article class="item-card ">
+                <div class="item-card__inner">
+                  <div class="item-card__image">
+                    <img src="images/catalog/2.jpeg" alt="Bouquet">
+                  </div>
+                  <div class="item-card__price">
+                    <div class="item-card__new-price">800 ₴</div>
+                  </div>
+                  <h4 class="item-card__descr">
+                    Мінібукет 1600-6
+                  </h4>
+                  <button class="item-card__favorite" type="button">
+                    <span class="sr-only">Add to favorite</span>
+                  </button>
+                </div>
+                <div class="item-card__details">
+                  <div class="item-card__contents">
+                    <p>
+                      Хрезантема - 6 шт. (50 см.), <br> Троянда міні - 4 шт.,
+                    </p>
+                  </div>
+                  <div class="item-card__box">
+                    <form class="item-card__form" action="#">
+                      <button class="item-card__number-button item-card__number-button--minus"
+                        type="button">&minus;</button>
+                      <input class="item-card__input"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"
+                        type="text" name="qty" id="qty2" value="1" required>
+                      <button class="item-card__number-button item-card__number-button--plus"
+                        type="button">&plus;</button>
+                    </form>
+                    <button class="button button--small item-card__button" type="submit">Замовити</button>
+                  </div>
+                </div>
+
+              </article>
+            </li>
+
+            <li class="catalog__card">
+              <article class="item-card ">
+                <div class="item-card__inner">
+                  <div class="item-card__image">
+                    <img src="images/catalog/3.jpeg" alt="Bouquet">
+                  </div>
+                  <div class="item-card__price">
+                    <div class="item-card__new-price">1000 ₴</div>
+                  </div>
+                  <h4 class="item-card__descr">
+                    Троянда Freedom 51 шт.
+                  </h4>
+                  <button class="item-card__favorite" type="button">
+                    <span class="sr-only">Add to favorite</span>
+                  </button>
+                </div>
+                <div class="item-card__details">
+                  <div class="item-card__contents">
+                    <p>
+                      Хрезантема - 6 шт. (50 см.), <br> Троянда міні - 4 шт.,
+                    </p>
+                  </div>
+                  <div class="item-card__box">
+                    <form class="item-card__form" action="#">
+                      <button class="item-card__number-button item-card__number-button--minus"
+                        type="button">&minus;</button>
+                      <input class="item-card__input"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"
+                        type="text" name="qty" id="qty3" value="1" required>
+                      <button class="item-card__number-button item-card__number-button--plus"
+                        type="button">&plus;</button>
+                    </form>
+                    <button class="button button--small item-card__button" type="submit">Замовити</button>
+                  </div>
+                </div>
+
+              </article>
+            </li>
+
+            <li class="catalog__card">
+              <article class="item-card ">
+                <div class="item-card__inner">
+                  <div class="item-card__image">
+                    <img src="images/catalog/4.jpeg" alt="Bouquet">
+                  </div>
+                  <div class="item-card__price">
+                    <div class="item-card__new-price">680 ₴</div>
+                  </div>
+                  <h4 class="item-card__descr">
+                    Мінібукет 1400-3
+                  </h4>
+                  <button class="item-card__favorite" type="button">
+                    <span class="sr-only">Add to favorite</span>
+                  </button>
+                </div>
+                <div class="item-card__details">
+                  <div class="item-card__contents">
+                    <p>
+                      Хрезантема - 6 шт. (50 см.), <br> Троянда міні - 4 шт.,
+                    </p>
+                  </div>
+                  <div class="item-card__box">
+                    <form class="item-card__form" action="#">
+                      <button class="item-card__number-button item-card__number-button--minus"
+                        type="button">&minus;</button>
+                      <input class="item-card__input"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"
+                        type="text" name="qty" id="qty4" value="1" required>
+                      <button class="item-card__number-button item-card__number-button--plus"
+                        type="button">&plus;</button>
+                    </form>
+                    <button class="button button--small item-card__button" type="submit">Замовити</button>
+                  </div>
+                </div>
+
+              </article>
+            </li>
+
+            <li class="catalog__card">
+              <article class="item-card ">
+                <div class="item-card__inner">
+                  <div class="item-card__image">
+                    <img src="images/catalog/5.jpeg" alt="Bouquet">
+                  </div>
+                  <div class="item-card__label item-card__label--new">
+                    <img src="images/sprite.svg#seed" alt="">
+                    <span>Новинка</span>
+                  </div>
+                  <div class="item-card__price">
+                    <div class="item-card__new-price">450 ₴</div>
+                  </div>
+                  <h4 class="item-card__descr">
+                    «Бархатний сезон»
+                  </h4>
+                  <button class="item-card__favorite" type="button">
+                    <span class="sr-only">Add to favorite</span>
+                  </button>
+                </div>
+                <div class="item-card__details">
+                  <div class="item-card__contents">
+                    <p>
+                      Хрезантема - 6 шт. (50 см.), <br> Троянда міні - 4 шт.,
+                    </p>
+                  </div>
+                  <div class="item-card__box">
+                    <form class="item-card__form" action="#">
+                      <button class="item-card__number-button item-card__number-button--minus"
+                        type="button">&minus;</button>
+                      <input class="item-card__input"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"
+                        type="text" name="qty" id="qty5" value="1" required>
+                      <button class="item-card__number-button item-card__number-button--plus"
+                        type="button">&plus;</button>
+                    </form>
+                    <button class="button button--small item-card__button" type="submit">Замовити</button>
+                  </div>
+                </div>
+
+              </article>
+            </li>
+
+            <li class="catalog__card">
+              <article class="item-card ">
+                <div class="item-card__inner">
+                  <div class="item-card__image">
+                    <img src="images/catalog/6.jpeg" alt="Bouquet">
+                  </div>
+                  <div class="item-card__label item-card__label--water">
+                    <img src="images/sprite.svg#water" alt="">
+                    <span>з водою</span>
+                  </div>
+                  <div class="item-card__price">
+                    <div class="item-card__new-price">56 ₴</div>
+                  </div>
+                  <h4 class="item-card__descr">
+                    Нобіліс
+                  </h4>
+                  <button class="item-card__favorite" type="button">
+                    <span class="sr-only">Add to favorite</span>
+                  </button>
+                </div>
+                <div class="item-card__details">
+                  <div class="item-card__contents">
+                    <p>
+                      Хрезантема - 6 шт. (50 см.), <br> Троянда міні - 4 шт.,
+                    </p>
+                  </div>
+                  <div class="item-card__box">
+                    <form class="item-card__form" action="#">
+                      <button class="item-card__number-button item-card__number-button--minus"
+                        type="button">&minus;</button>
+                      <input class="item-card__input"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"
+                        type="text" name="qty" id="qty6" value="1" required>
+                      <button class="item-card__number-button item-card__number-button--plus"
+                        type="button">&plus;</button>
+                    </form>
+                    <button class="button button--small item-card__button" type="submit">Замовити</button>
+                  </div>
+                </div>
+
+              </article>
+            </li>
+
+          </ul>
+        </div>
+
+        <a class="catalog__all" href="#">Дивитись всі</a>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <h2 class="title title--right about__title">Якість в деталях</h2>
+        <div class="about__box">
+          <div class="about__image ibg">
+            <img src="images/about/1.jpeg" alt="Bouquet">
+          </div>
+          <div class="about__content">
+            <div class="about__inner">
+              <h3 class="about__content-title">Контроль свіжості квітів </h3>
+              <div class="about__text">
+                <p>Ми співпрацюємо з кращими постачальниками квітів і готові запропонувати Вам <strong>широкий
+                    асортимент
+                    квітів</strong>,
+                  починаючи від місцевих сортів і закінчуючи рідкісними імпортованими варіантами.
+                </p>
+                <p>
+                  Ваша близька людина отримає найкращий подарунок, адже ми ретельно підбираємо кожну квітку для вашого
+                  букету.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__box about__box--reverse">
+          <div class="about__image ibg">
+            <img src="images/about/2.png" alt="Bouquet">
+          </div>
+          <div class="about__content">
+            <div class="about__inner">
+              <h3 class="about__content-title">Оформлення букетів</h3>
+              <div class="about__text">
+                <p>Ми готові зібрати <strong>унікальний букет по індивідуальному замовленню</strong> . Наші флористи
+                  втілять
+                  в життя будь
+                  яку Вашу ідею!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__box">
+          <div class="about__image ibg">
+            <img src="images/about/3.jpeg" alt="Bouquet">
+          </div>
+          <div class="about__content">
+            <div class="about__inner">
+              <h3 class="about__content-title">Швидка доставка</h3>
+              <div class="about__text">
+                <p>Ми робимо доставки по Україні протягом <strong>3-х годин</strong> з моменту оплати замовлення.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="contact-clients">
+      <section class="contact">
+        <div class="container">
+          <h2 class="title contact__title">Не можете визначитись з вибором букету?</h2>
+        </div>
+
+        <div class="contact__inner">
+          <div class="container">
+            <div class="contact__wrapper">
+
+              <div class="contact__box">
+                <h3 class="contact__subtitle contact__form-subtitle">Відправте заявку і Вам зателефонують
+                  протягом однієї хвилини
+                </h3>
+                <form class="contact__form" action="#">
+                  <div class="contact__form-box">
+                    <label class="contact__label contact__label--name" for="name"><span
+                        class="sr-only">Ім’я</span></label>
+                    <input class="contact__input" type="text" placeholder="Ім’я" id="name">
+                  </div>
+                  <div class="contact__form-box">
+                    <label class="contact__label contact__label--phone" for="phone"><span
+                        class="sr-only">Телефон</span></label>
+                    <input class="contact__input" type="tel" placeholder="Телефон" id="phone">
+                  </div>
+                  <button class="button contact__button" type="submit">Залишити заявку</button>
+                </form>
+              </div>
+
+
+              <div class="contact__box">
+                <h4 class="contact__subtitle contact__list-subtitle">Наш менеджер по телефону:</h4>
+
+                <ul class="contact__list">
+                  <li class="contact__item">Відповість на будь які запитання</li>
+                  <li class="contact__item">Підбере рішення відповідно до ваших запитів та бажань</li>
+                  <li class="contact__item">Підготує унікальну пропозицію та детально розповість Вам про наші
+                    букети</li>
+                  <li class="contact__item">Оформить для Вас подарунок-сюрприз</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="contact__popup popup-contact">
+            <h2 class="popup-contact__title">Дякуємо!</h2>
+            <div class="popup-contact__text">Найближчим часом наш менеджер звʼяжеться з вами.</div>
+            <button class="popup-contact__close" type="button"><span class="sr-only">Закрити</span></button>
+          </div>
+
+        </div>
+
+
+
+      </section>
+
+      <section class="clients">
+        <div class="container">
+          <h2 class="title title--right clients__title">Наші клієнти</h2>
+        </div>
+
+        <div class="container clients__container">
+          <div class="clients__inner">
+            <div class="clients__slider swiper">
+              <div class="clients__wrapper swiper-wrapper">
+                <div class="clients__slide swiper-slide">
+                  <img src="images/clients/1.jpeg" alt="Bouquet">
+                </div>
+                <div class="clients__slide swiper-slide">
+                  <img src="images/clients/2.jpeg" alt="Bouquet">
+                </div>
+                <div class="clients__slide swiper-slide">
+                  <img src="images/clients/3.jpeg" alt="Bouquet">
+                </div>
+                <div class="clients__slide swiper-slide">
+                  <img src="images/clients/4.jpeg" alt="Bouquet">
+                </div>
+                <div class="clients__slide swiper-slide">
+                  <img src="images/clients/1.jpeg" alt="Bouquet">
+                </div>
+                <div class="clients__slide swiper-slide">
+                  <img src="images/clients/2.jpeg" alt="Bouquet">
+                </div>
+                <div class="clients__slide swiper-slide">
+                  <img src="images/clients/3.jpeg" alt="Bouquet">
+                </div>
+                <div class="clients__slide swiper-slide">
+                  <img src="images/clients/4.jpeg" alt="Bouquet">
+                </div>
+
+              </div>
+
+
+            </div>
+
+            <div class="clients__arrow clients__arrow--prev  swiper-button-prev"></div>
+            <div class="clients__arrow clients__arrow--next swiper-button-next"></div>
+            <div class="clients__pagination swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+  </main>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__box">
+        <ul class="footer__menu">
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">Головна</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">Каталог</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">Відгуки</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">Як замовити</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">Контакти</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__box footer__box--social">
+        <div class="footer__logo">
+          <img src="images/logo.svg" alt="Logo" width="264" height="137">
+        </div>
+        <ul class="footer__social">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="tel:380977775577">
+              <img src="images/social/phone.svg" alt="Icon">
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <img src="images/social/instagram.svg" alt="Icon">
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <img src="images/social/facebook.svg" alt="Icon">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__box">
+        <div class="footer__contacts">
+          <div class="footer__contacts-box">
+            <span>+38097 777 55 77</span>
+            Наш телефон
+          </div>
+          <div class="footer__contacts-box">
+            <span>info@floverlover.ua</span>
+            Контактний е-mail
+          </div>
+          <div class="footer__contacts-box">
+            <span>
+              Київ<br>
+              вул. Маріупольська, 14.<br>
+            </span>
+            Наш магазин
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
